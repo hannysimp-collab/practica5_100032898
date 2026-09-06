@@ -1,0 +1,91 @@
+/* ── Reinicio global ── */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ── Selector de tipo: estilos base ── */
+body {
+    font-family: 'Arial', Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #77686D;
+    background-color: #4D363D;
+}
+
+h1, h2, h3 {                  /* Selector agrupado */
+    font-family: 'Georgia', serif;
+    color: #331C23;
+    margin-bottom: 10px;
+}
+
+a {
+    color: #C0392B;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+/* ── Selector de identificador: elementos únicos ── */
+#encabezado {
+    background-color: #331C23;
+    color: #FFFFFF;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#encabezado h1 {             /* Selector descendiente */
+    color: #FFFFFF;
+    font-size: 28px;
+}
+nav a {                       /* Selector descendiente */
+    color: #FFFFFF;
+    padding: 0 14px;
+    font-weight: bold;
+}
+
+#pie {
+    background-color: #1A5276;
+    color: #BDC3C7;
+    text-align: center;
+    padding: 16px;
+    margin-top: 40px;
+    font-size: 14px;
+}
+
+/* ── Selectores de clase: reutilizables ── */
+.destacado {
+    background-color: #ffffff;
+    border-left: 4px solid #77686D;
+    padding: 12px 16px;
+    border-radius: 4px;
+    font-weight: bold;
+    margin: 12px 0;
+}
+
+.tarjeta {
+    background-color: #FFFFFF;
+    border: 1px solid #D5D8DC;
+ border-radius: 8px;
+    padding: 10px 20px;
+    margin: 6px 0;
+    list-style: none;
+    box-shadow: 2px 2px 6px rgba(0,0,0,0.08);
+}
+
+.boton-enlace {
+    display: inline-block;
+    background-color: #C0392B;
+    color: #FFFFFF;
+    padding: 8px 20px;
+    border-radius: 4px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+.boton-enlace:hover {
+    background-color: #922B21;
+}
+

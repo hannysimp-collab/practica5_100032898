@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practica5 - Introduccion a CSS</title>
+    <link rel="stylesheet" href="css/estilo.css">
+
+    <style>
+    /* Esta regla tiene menor especificidad que #encabezado en el .css externo */
+    /* pero mayor que el selector de tipo header */
+    p { font-size: 15px; } /* Prevalece estilo.css si define especificidad mayor */
+  </style>
+
+</head>
+<body>
+    <header id="encabezado">
+        <h1> Mi portafolio web</h1>
+        <nav>
+            <ul> 
+                <li><a href="#home">Home</a></li>
+                <li><a href="#sobre-mi">Sobre mí</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+        
+    </header>
+    <main> 
+        <section id="home">
+            <h2>Bienvenido a mi portafolio</h2>
+            <p>Este es un ejemplo de un portafolio web utilizando HTML y CSS.</p>
+        </section>
+        <article> 
+            <section id="sobre-mi">
+                <h2>Sobre mí</h2>
+                <p class="destacado">Información sobre mí.</p>
+                <p> Actualmente estoy cursando la licenciatura en sistemas computacionales.</p>
+                <p> Estoy en el Quinto semestre y estoy en el grupo K.</p>
+            </section>
+            <section id="habilidades">
+                <h2>Habilidades</h2>
+                <p>Lista de mis habilidades TODASS profesionales.</p>
+                <ul>
+                    <li>Desarrollo web con HTML, CSS</li>
+                    <li>Creacion de Base de datos </li>
+                    <li>Resolución de problemas y pensamiento crítico</li>
+                    <li>Trabajo en equipo y colaboración</li>
+                    <li>Habilidad en el diseño web</li>
+                    <li>Soy muy buena dibujando jssjdsj y muy bonita</li>
+                </ul>
+            </section>
+            <section id="contacto">
+                <h2>Contacto</h2>
+                <p>Información de contacto.</p>
+                <address>
+                    <p>Correo electrónico: hannya.victor95@unach.com</p>
+                </address>
+               
+<p>
+    Sígueme en 
+    <a href="https://www.instagram.com/hanny.asm" target="_blank">
+        Instagram
+    </a>
+    
+</p>
+<p>
+   <img src="gif/gift.gif" alt="Mi GIF animado" width="300">
+ 
+    
+</p>
+
+
+
+            </section>
+        </article>
+        <aside>
+      <h3>Dato rápido</h3>
+      <!-- Estilo en línea: demuestra mayor especificidad -->
+       <!-- La verdad no entendi esta parte -->
+      <p style="color: #CB7790; font-style: italic;">
+        Este párrafo usa estilo en línea y prevalece sobre .css externo.
+      </p>
+    </aside>
+  </main>
+
+    
+    <footer id="piecito">
+        <p> Hannya Azereth Victor Pérez &mdash; | LSC | Practica 5 &mdash; | 2025</p>
+     </footer>
+</body>
+</html>
